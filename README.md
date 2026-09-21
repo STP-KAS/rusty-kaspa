@@ -18,6 +18,8 @@ The default branch of this repository is `master` and new contributions are cons
 
 The [Crescendo Hardfork](docs/crescendo-guide.md) took place on May 5, 2025, at approximately 15:00 UTC. The fork has transitioned the network from a blockrate of 1 BPS to that of 10 BPS, and incorporated several major KIPs.
 
+
+
 ## Installation
   <details>
   <summary>Building on Linux</summary>
@@ -62,12 +64,16 @@ The [Crescendo Hardfork](docs/crescendo-guide.md) took place on May 5, 2025, at 
       ```
   </details>
 
+
+
   <details>
   <summary>Building on Windows</summary>
+
 
   1. [Install Git for Windows](https://gitforwindows.org/) or an alternative Git distribution.
 
   2. Install [Protocol Buffers](https://github.com/protocolbuffers/protobuf/releases/download/v21.10/protoc-21.10-win64.zip) and add the `bin` directory to your `Path`
+
 
 3. Install [LLVM-15.0.6-win64.exe](https://github.com/llvm/llvm-project/releases/download/llvmorg-15.0.6/LLVM-15.0.6-win64.exe)
 
@@ -95,8 +101,10 @@ The [Crescendo Hardfork](docs/crescendo-guide.md) took place on May 5, 2025, at 
       ```
  </details>
 
+
   <details>
   <summary>Building on Mac OS</summary>
+
 
   1. Install Protobuf (required for gRPC)
       ```bash
@@ -238,12 +246,15 @@ Kaspa CLI + Wallet
 terminal interface to the Rusty Kaspa Wallet runtime. These wallets are
 compatible with WASM SDK Wallet API and Kaspa NG projects.
 
+
 ```bash
 cd cli
 cargo run --release
 ```
 
 </details>
+
+
 
 <details>
 
@@ -262,7 +273,9 @@ The *basic-http-server* will serve on port 4000 by default, so open your web bro
 
 The framework is compatible with all major desktop and mobile browsers.
 
+
 </details>
+
 
 ## Running the node
 
@@ -338,6 +351,7 @@ wRPC
 
   wRPC subsystem is disabled by default in `kaspad` and can be enabled via:
 
+
   JSON protocol:
   ```bash
   --rpclisten-json=<interface:port>
@@ -383,6 +397,7 @@ Check out the [README.md](bridge/docs/README.md) for instructions on how to run 
 
 ## Benchmarking & Testing
 
+
 <details>
 
 <summary>Simulation framework (Simpa)</summary>
@@ -402,6 +417,9 @@ cargo run --release --bin simpa -- -t=200 -d=2 -b=8 -n=1000
 
 </details>
 
+
+
+
 <details>
 
 <summary>Heap Profiling</summary>
@@ -416,9 +434,11 @@ It will produce `{bin-name}-heap.json` file in the root of the workdir, that can
 
 </details>
 
+
 <details>
 
 <summary>Tests</summary>
+
 
 **Run unit and most integration tests**
 
@@ -427,6 +447,8 @@ cd rusty-kaspa
 cargo test --release
 // or install nextest and run
 ```
+
+
 
 **Using nextest**
 
@@ -447,6 +469,7 @@ cd rusty-kaspa
 ```
 
 </details>
+
 
 <details>
 
